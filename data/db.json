@@ -1,0 +1,431 @@
+{
+  "categories": [
+    {
+      "id": "cat-1",
+      "name": "Conference & Meeting Rooms",
+      "slug": "conference-rooms",
+      "description": "Acoustically treated meeting spaces with 4K video conferencing, whiteboards, and air filtration.",
+      "icon": "Building2",
+      "color": "#6366f1",
+      "createdAt": "2026-10-12T18:22:50.037Z",
+      "updatedAt": "2026-10-12T18:22:50.037Z"
+    },
+    {
+      "id": "cat-2",
+      "name": "R&D Hardware Labs",
+      "slug": "hardware-labs",
+      "description": "High-precision research environments, ESD-safe workstations, and sensor testing bays.",
+      "icon": "FlaskConical",
+      "color": "#06b6d4",
+      "createdAt": "2026-10-12T18:22:50.037Z",
+      "updatedAt": "2026-10-12T18:22:50.037Z"
+    },
+    {
+      "id": "cat-3",
+      "name": "GPU & AI Workstations",
+      "slug": "ai-workstations",
+      "description": "Dedicated high-throughput compute nodes with NVIDIA H100/A100 GPUs for model training and simulation.",
+      "icon": "Cpu",
+      "color": "#ec4899",
+      "createdAt": "2026-10-12T18:22:50.037Z",
+      "updatedAt": "2026-10-12T18:22:50.037Z"
+    },
+    {
+      "id": "cat-4",
+      "name": "Media & Streaming Gear",
+      "slug": "media-equipment",
+      "description": "Studio-grade audio/video capture setups, lighting rigs, and podcasting kits.",
+      "icon": "Camera",
+      "color": "#eab308",
+      "createdAt": "2026-10-12T18:22:50.037Z",
+      "updatedAt": "2026-10-12T18:22:50.037Z"
+    },
+    {
+      "id": "cat-5",
+      "name": "Corporate Mobility",
+      "slug": "corporate-mobility",
+      "description": "Zero-emission fleet vehicles available for client on-sites and inter-facility logistics.",
+      "icon": "Car",
+      "color": "#10b981",
+      "createdAt": "2026-10-12T18:22:50.037Z",
+      "updatedAt": "2026-10-12T18:22:50.037Z"
+    }
+  ],
+  "resources": [
+    {
+      "id": "res-1",
+      "name": "The Quantum Executive Boardroom",
+      "code": "CR-ALPHA",
+      "description": "Flagship executive meeting room with dual 85\" 4K displays, Polycom Studio zoom bars, and seating for 18.",
+      "categoryId": "cat-1",
+      "capacity": 18,
+      "location": "Level 4, Executive Wing (Room 401)",
+      "status": "AVAILABLE",
+      "amenities": [
+        "Dual 4K Displays",
+        "Polycom 4K Cam",
+        "Acoustic Wall Panels",
+        "Wireless Presentation",
+        "Espresso Bar"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
+      "requiresApproval": true,
+      "minDurationMinutes": 30,
+      "maxDurationMinutes": 480,
+      "createdAt": "2026-08-13T18:22:50.037Z",
+      "updatedAt": "2026-10-12T18:22:50.037Z"
+    },
+    {
+      "id": "res-2",
+      "name": "Photonics & Sensor Testing Bay",
+      "code": "LAB-PHOTON",
+      "description": "Darkened, vibration-isolated laboratory station equipped with optical spectrum analyzers and laser safety shielding.",
+      "categoryId": "cat-2",
+      "capacity": 4,
+      "location": "Ground Floor, Heavy Science Block (Bay 04)",
+      "status": "AVAILABLE",
+      "amenities": [
+        "Vibration Isolation Table",
+        "Optical Spectrum Analyzer",
+        "ESD Flooring",
+        "Laser Interlocks",
+        "Nitrogen Line"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?auto=format&fit=crop&w=800&q=80",
+      "requiresApproval": true,
+      "minDurationMinutes": 60,
+      "maxDurationMinutes": 600,
+      "createdAt": "2026-08-23T18:22:50.037Z",
+      "updatedAt": "2026-10-12T18:22:50.037Z"
+    },
+    {
+      "id": "res-3",
+      "name": "DGX AI Training Rig 01",
+      "code": "GPU-NODE-01",
+      "description": "Dedicated GPU cluster node featuring 4x NVIDIA H100 80GB SXM5, PCIe Gen5 NVMe scratch space, and 200Gb/s InfiniBand.",
+      "categoryId": "cat-3",
+      "capacity": 1,
+      "location": "Server Room 2 (Remote Terminal & Direct Jumper Access)",
+      "status": "AVAILABLE",
+      "amenities": [
+        "4x H100 GPUs",
+        "InfiniBand HDR",
+        "Slurm Orchestrator",
+        "JupyterHub Access",
+        "TensorRT Runtime"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+      "requiresApproval": false,
+      "minDurationMinutes": 60,
+      "maxDurationMinutes": 720,
+      "createdAt": "2026-09-02T18:22:50.037Z",
+      "updatedAt": "2026-10-12T18:22:50.037Z"
+    },
+    {
+      "id": "res-4",
+      "name": "Studio A: 4K Broadcast & Media Suite",
+      "code": "MEDIA-A",
+      "description": "Sound-dampened media studio with Sony FX3 full-frame cinematic camera, Shure SM7B mics, and multi-color key lighting.",
+      "categoryId": "cat-4",
+      "capacity": 6,
+      "location": "Level 2, Creative Hub (Studio 208)",
+      "status": "AVAILABLE",
+      "amenities": [
+        "Sony FX3 Cine Kit",
+        "Shure SM7B Mics",
+        "Aputure Light Dome",
+        "Blackmagic ATEM Mini",
+        "Green Screen Wall"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=800&q=80",
+      "requiresApproval": true,
+      "minDurationMinutes": 30,
+      "maxDurationMinutes": 360,
+      "createdAt": "2026-09-07T18:22:50.037Z",
+      "updatedAt": "2026-10-12T18:22:50.037Z"
+    },
+    {
+      "id": "res-5",
+      "name": "The Helix Collaboration Pod",
+      "code": "POD-HELIX",
+      "description": "Fast-paced agile squad room with glass whiteboards, 55\" touch monitor, and modular ergonomic seating for 8.",
+      "categoryId": "cat-1",
+      "capacity": 8,
+      "location": "Level 3, Engineering Floor (Pod 312)",
+      "status": "AVAILABLE",
+      "amenities": [
+        "Interactive 55\" Touch TV",
+        "Full-Wall Whiteboard",
+        "Standing Desks",
+        "Miro Screen Cast"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80",
+      "requiresApproval": false,
+      "minDurationMinutes": 15,
+      "maxDurationMinutes": 240,
+      "createdAt": "2026-09-12T18:22:50.037Z",
+      "updatedAt": "2026-10-12T18:22:50.037Z"
+    },
+    {
+      "id": "res-6",
+      "name": "Rapid Prototyping & 3D Print Lab",
+      "code": "LAB-3DP",
+      "description": "Equipped with Bambu Lab X1-Carbon, Formlabs Form 3+ SLA resin printers, and soldering rework station.",
+      "categoryId": "cat-2",
+      "capacity": 3,
+      "location": "Basement Makerspace (Zone B-12)",
+      "status": "MAINTENANCE",
+      "amenities": [
+        "Bambu Lab X1-Carbon",
+        "Formlabs Resin SLA",
+        "Hakko Soldering Station",
+        "Fume Extraction",
+        "Caliper Tooling"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80",
+      "requiresApproval": true,
+      "minDurationMinutes": 60,
+      "maxDurationMinutes": 480,
+      "createdAt": "2026-09-17T18:22:50.037Z",
+      "updatedAt": "2026-10-12T18:22:50.037Z"
+    },
+    {
+      "id": "res-7",
+      "name": "PrimeWave Fleet EV (Van 01)",
+      "code": "FLEET-EV-01",
+      "description": "All-electric 7-passenger transport van with fast CCS charging for field demonstrations and executive transfers.",
+      "categoryId": "cat-5",
+      "capacity": 7,
+      "location": "Underground Parking Bay E-01",
+      "status": "AVAILABLE",
+      "amenities": [
+        "Level 2 Fast Charging Cable",
+        "GPS Fleet Tracking",
+        "WiFi Hotspot",
+        "Toll Transponder",
+        "Child Safety Anchors"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80",
+      "requiresApproval": true,
+      "minDurationMinutes": 60,
+      "maxDurationMinutes": 600,
+      "createdAt": "2026-09-22T18:22:50.037Z",
+      "updatedAt": "2026-10-12T18:22:50.037Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "user-admin",
+      "name": "Dr. Aaron Vance",
+      "email": "admin@primewave.com",
+      "role": "ADMIN",
+      "department": "Operations & Facilities",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=256&q=80",
+      "phone": "+94 11 234 5678",
+      "createdAt": "2026-09-12T18:22:50.037Z",
+      "updatedAt": "2026-10-12T18:22:50.037Z"
+    },
+    {
+      "id": "user-jane",
+      "name": "Jane Wickramasinghe",
+      "email": "jane@primewave.com",
+      "role": "USER",
+      "department": "AI & Neural Systems",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=256&q=80",
+      "phone": "+94 77 123 4567",
+      "createdAt": "2026-09-17T18:22:50.037Z",
+      "updatedAt": "2026-10-12T18:22:50.037Z"
+    },
+    {
+      "id": "user-kasun",
+      "name": "Kasun Perera",
+      "email": "kasun@primewave.com",
+      "role": "USER",
+      "department": "Embedded Systems & Robotics",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=256&q=80",
+      "phone": "+94 71 987 6543",
+      "createdAt": "2026-09-22T18:22:50.037Z",
+      "updatedAt": "2026-10-12T18:22:50.037Z"
+    },
+    {
+      "id": "user-sarah",
+      "name": "Sarah Chen",
+      "email": "sarah@primewave.com",
+      "role": "USER",
+      "department": "Product & Design",
+      "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=256&q=80",
+      "phone": "+94 76 555 4321",
+      "createdAt": "2026-09-27T18:22:50.037Z",
+      "updatedAt": "2026-10-12T18:22:50.037Z"
+    }
+  ],
+  "reservations": [
+    {
+      "id": "resv-101",
+      "title": "Q4 Product Roadmap & Executive Review",
+      "purpose": "Quarterly review with departmental heads and PrimeWave steering committee.",
+      "userId": "user-admin",
+      "resourceId": "res-1",
+      "startTime": "2026-10-13T03:00:00.000Z",
+      "endTime": "2026-10-13T05:30:00.000Z",
+      "status": "APPROVED",
+      "attendeesCount": 14,
+      "adminNotes": "Boardroom AV tested and coffee service ordered.",
+      "userNotes": "Need dual screens synced for presentation.",
+      "createdAt": "2026-10-11T04:00:00.000Z",
+      "updatedAt": "2026-10-11T05:00:00.000Z"
+    },
+    {
+      "id": "resv-102",
+      "title": "Deep Learning Model Checkpoint Fine-tuning",
+      "purpose": "Training 7B parameter vision-language model checkpoint for edge deployment.",
+      "userId": "user-jane",
+      "resourceId": "res-3",
+      "startTime": "2026-10-13T07:00:00.000Z",
+      "endTime": "2026-10-13T12:00:00.000Z",
+      "status": "APPROVED",
+      "attendeesCount": 1,
+      "adminNotes": "Auto-approved via self-service quota policy.",
+      "userNotes": "Reserved overnight batch priority if needed.",
+      "createdAt": "2026-10-12T08:00:00.000Z",
+      "updatedAt": "2026-10-12T08:00:00.000Z"
+    },
+    {
+      "id": "resv-103",
+      "title": "LiDAR Sensor Calibration Run",
+      "purpose": "Precision optic alignment testing for autonomous rover obstacle detection.",
+      "userId": "user-kasun",
+      "resourceId": "res-2",
+      "startTime": "2026-10-13T08:00:00.000Z",
+      "endTime": "2026-10-13T11:00:00.000Z",
+      "status": "PENDING",
+      "attendeesCount": 3,
+      "adminNotes": null,
+      "userNotes": "Will require nitrogen purge line active.",
+      "createdAt": "2026-10-13T02:15:00.000Z",
+      "updatedAt": "2026-10-13T02:15:00.000Z"
+    },
+    {
+      "id": "resv-104",
+      "title": "Design System Sprint Kickoff",
+      "purpose": "Cross-functional UI/UX review with design and front-end engineering teams.",
+      "userId": "user-sarah",
+      "resourceId": "res-5",
+      "startTime": "2026-10-14T04:00:00.000Z",
+      "endTime": "2026-10-14T06:00:00.000Z",
+      "status": "APPROVED",
+      "attendeesCount": 6,
+      "adminNotes": "Room confirmed.",
+      "userNotes": "Connecting iPads to touch screen.",
+      "createdAt": "2026-10-12T10:00:00.000Z",
+      "updatedAt": "2026-10-12T10:30:00.000Z"
+    },
+    {
+      "id": "resv-105",
+      "title": "Tech Talk Podcast Recording Ep. 14",
+      "purpose": "Interviewing guest researcher on neuromorphic computing architectures.",
+      "userId": "user-jane",
+      "resourceId": "res-4",
+      "startTime": "2026-10-14T08:30:00.000Z",
+      "endTime": "2026-10-14T10:30:00.000Z",
+      "status": "PENDING",
+      "attendeesCount": 2,
+      "adminNotes": null,
+      "userNotes": "Microphones pre-tested yesterday.",
+      "createdAt": "2026-10-13T05:00:00.000Z",
+      "updatedAt": "2026-10-13T05:00:00.000Z"
+    },
+    {
+      "id": "resv-106",
+      "title": "Client Demonstration at University Tech Park",
+      "purpose": "Transporting robotics prototype and team to client demo facility.",
+      "userId": "user-kasun",
+      "resourceId": "res-7",
+      "startTime": "2026-10-15T02:30:00.000Z",
+      "endTime": "2026-10-15T08:00:00.000Z",
+      "status": "APPROVED",
+      "attendeesCount": 5,
+      "adminNotes": "Vehicle keys in Room 401 lockbox. Mileage log must be completed.",
+      "userNotes": "Loading equipment at 8:15 AM.",
+      "createdAt": "2026-10-10T03:00:00.000Z",
+      "updatedAt": "2026-10-10T04:00:00.000Z"
+    },
+    {
+      "id": "resv-107",
+      "title": "Legacy Firmware Retrospective",
+      "purpose": "Review of v1.2 embedded stability issues.",
+      "userId": "user-sarah",
+      "resourceId": "res-1",
+      "startTime": "2026-10-12T08:00:00.000Z",
+      "endTime": "2026-10-12T10:00:00.000Z",
+      "status": "COMPLETED",
+      "attendeesCount": 8,
+      "adminNotes": "Completed successfully.",
+      "userNotes": null,
+      "createdAt": "2026-10-09T03:00:00.000Z",
+      "updatedAt": "2026-10-12T10:00:00.000Z"
+    },
+    {
+      "id": "resv-108",
+      "title": "All-Hands Emergency Townhall (Conflict Test Demo)",
+      "purpose": "Draft reservation overlapping with Boardroom Alpha.",
+      "userId": "user-kasun",
+      "resourceId": "res-1",
+      "startTime": "2026-10-13T04:00:00.000Z",
+      "endTime": "2026-10-13T06:00:00.000Z",
+      "status": "REJECTED",
+      "attendeesCount": 15,
+      "adminNotes": "Rejected due to scheduling overlap with Q4 Product Roadmap review.",
+      "userNotes": "Please reschedule to Helix Pod.",
+      "createdAt": "2026-10-12T09:00:00.000Z",
+      "updatedAt": "2026-10-12T09:30:00.000Z"
+    }
+  ],
+  "activityLogs": [
+    {
+      "id": "log-1",
+      "userId": "user-admin",
+      "action": "APPROVED_RESERVATION",
+      "entityType": "Reservation",
+      "entityId": "resv-101",
+      "details": "Approved \"Q4 Product Roadmap & Executive Review\" for CR-ALPHA",
+      "createdAt": "2026-10-11T05:00:00.000Z"
+    },
+    {
+      "id": "log-2",
+      "userId": "user-admin",
+      "action": "REJECTED_RESERVATION",
+      "entityType": "Reservation",
+      "entityId": "resv-108",
+      "details": "Rejected conflicting reservation for CR-ALPHA (Resource occupied)",
+      "createdAt": "2026-10-12T09:30:00.000Z"
+    },
+    {
+      "id": "log-3",
+      "userId": "user-sarah",
+      "action": "CREATED_RESERVATION",
+      "entityType": "Reservation",
+      "entityId": "resv-104",
+      "details": "Submitted booking for The Helix Collaboration Pod",
+      "createdAt": "2026-10-12T10:00:00.000Z"
+    },
+    {
+      "id": "log-4",
+      "userId": "user-kasun",
+      "action": "SUBMITTED_BOOKING",
+      "entityType": "Reservation",
+      "entityId": "resv-103",
+      "details": "Requested access to Photonics & Sensor Testing Bay (Pending Admin Review)",
+      "createdAt": "2026-10-13T02:15:00.000Z"
+    },
+    {
+      "id": "log-5",
+      "userId": "user-jane",
+      "action": "SUBMITTED_BOOKING",
+      "entityType": "Reservation",
+      "entityId": "resv-105",
+      "details": "Requested Media Studio A for podcast recording",
+      "createdAt": "2026-10-13T05:00:00.000Z"
+    }
+  ]
+}

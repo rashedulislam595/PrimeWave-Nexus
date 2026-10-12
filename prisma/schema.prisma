@@ -1,0 +1,110 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  USER
+}
+
+enum ResourceStatus {
+  AVAILABLE
+  MAINTENANCE
+  RETIRED
+}
+
+enum ReservationStatus {
+  PENDING
+  APPROVED
+  REJECTED
+  CANCELLED
+  COMPLETED
+}
+
+model User {
+  id           String        @id @default(cuid())
+  name         String
+  email        String        @unique
+  password     String
+  role         Role          @default(USER)
+  department   String
+  avatar       String?
+  phone        String?
+  reservations Reservation[]
+  activityLogs ActivityLog[]
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+}
+
+model Category {
+  id          String     @id @default(cuid())
+  name        String     @unique
+  slug        String     @unique
+  description String?
+  icon        String?
+  color       String?
+  resources   Resource[]
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+}
+
+model Resource {
+  id                 String         @id @default(cuid())
+  name               String
+  code               String         @unique
+  description        String
+  categoryId         String
+  category           Category       @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  capacity           Int            @default(1)
+  location           String
+  status             ResourceStatus @default(AVAILABLE)
+  amenities          String         @default("[]") // JSON string of amenities list
+  imageUrl           String?
+  requiresApproval   Boolean        @default(true)
+  minDurationMinutes Int            @default(30)
+  maxDurationMinutes Int            @default(480)
+  reservations       Reservation[]
+  createdAt          DateTime       @default(now())
+  updatedAt          DateTime       @updatedAt
+}
+
+model Reservation {
+  id             String            @id @default(cuid())
+  title          String
+  purpose        String?
+  userId         String
+  user           User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  resourceId     String
+  resource       Resource          @relation(fields: [resourceId], references: [id], onDelete: Cascade)
+  startTime      DateTime
+  endTime        DateTime
+  status         ReservationStatus @default(PENDING)
+  attendeesCount Int               @default(1)
+  adminNotes     String?
+  userNotes      String?
+  createdAt      DateTime          @default(now())
+  updatedAt      DateTime          @updatedAt
+
+  @@index([resourceId, startTime, endTime])
+  @@index([userId])
+  @@index([status])
+}
+
+model ActivityLog {
+  id         String   @id @default(cuid())
+  userId     String?
+  user       User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  action     String
+  entityType String
+  entityId   String?
+  details    String?
+  createdAt  DateTime @default(now())
+}
